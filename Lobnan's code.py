@@ -8,7 +8,7 @@ def load_data(file_path):
     data = pd.read_csv(file_path)
     return data
 
-file_path = "C:\\Users\\Lubnan\\Desktop\\brain_stroke.csv"
+file_path = "brain_stroke.csv"
 df = load_data(file_path)
 
 st.sidebar.header("Specify Input Parameters")
