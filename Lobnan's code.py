@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
-df=pd.read_csv("brain_stroke.csv")
+df=pd.read_csv("./brain_stroke.csv")
  
 
 st.sidebar.header("Specify Input Parameters")
