@@ -3,13 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 
-@st.cache_data
-def load_data(file_path):
-    data = pd.read_csv(file_path)
-    return data
-
-file_path = "brain_stroke.csv"
-df = load_data(file_path)
+df=pd.read_csv("brain_stroke.csv")
+ 
 
 st.sidebar.header("Specify Input Parameters")
 age = st.sidebar.slider('Age', min_value=int(df['age'].min()), max_value=int(df['age'].max()), value=(int(df['age'].min()),int(df['age'].max())))
